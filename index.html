@@ -10,7 +10,7 @@
 
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <!-- Place favicon.ico in the root directory -->
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -57,23 +57,40 @@
   <div class="row">
 
     <p id="demo"></p>
-    <h1 id="dodo" onmouseover="mouseOver()" onmouseout="mouseOut()">Home Page</h1>
-    <article class="col-xs-12 col-sm-6 col-md-6 col-lg-7">
-      <img src="" alt="">
+    <h1 >Home Page</h1>
+    <article class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+      <img id="dodo" onmouseover="mouseOver()" onmouseout="mouseOut()" src="img/blog1.jpg" alt="gps">
     </article>
-    <article class="col-xs-12 col-sm-6 col-md-6 col-lg-7">
-      <img src="" alt="">
+    <article class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+      <img src="img/blog2.jpg" alt="moto electrique">
     </article>
+    <article class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+      <img src="img/blog2.jpg" alt="moto electrique">
+    </article>
+    <!-- <========================= aside =======================++++++++> -->
+    <aside id="icons"class="hidden-xs hidden-sm hidden-md col-lg-2">
+
+      <ul>
+        <li><a href="#" class="fa fa-facebook"></a></li>
+        <li><a href="#" class="fa fa-twitter"></a></li>
+        <li><a href="#" class="fa fa-instagram"></a></li>
+        <li><a href="#" class="fa fa-google"></a></li>
+        <li><a href="#" class="fa fa-yahoo"></a></li>
+        <li><a href="#" class="fa fa-youtube"></a></li>
+      </ul>
+    </aside>
+    <!-- <================================ /aside ==========================> -->
   </div>
 
 </main>
+<!-- <=============================== /main =================================> -->
 <script>
 var d = new Date();
 document.getElementById("demo").innerHTML = d.toDateString();
 </script>
 <script>
 function mouseOver() {
-  document.getElementById("dodo").style.color = "red";
+  document.getElementById("dodo").style.border = "red";
 }
 
 function mouseOut() {
