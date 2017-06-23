@@ -4,11 +4,11 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title></title>
+  <title>blog-blog</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="apple-touch-icon" href="blogger-logo.png">
   <!-- Place favicon.ico in the root directory -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/normalize.css">
@@ -41,8 +41,8 @@
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
           <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">Presentation</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#present">Presentation</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
@@ -59,7 +59,7 @@
     <p id="demo"></p>
     <h1 >Home Page</h1>
     <article class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-      <img id="dodo" onmouseover="mouseOver()" onmouseout="mouseOut()" src="img/blog1.jpg" alt="gps">
+      <img  src="img/blog1.jpg" alt="gps">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </article>
     <article class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
@@ -86,32 +86,176 @@
   </div>
 
 </main>
-
-<section class="container">
+<!-- <#####################################" presntation "#########################> -->
+<section id="present" class="container">
+  <h1>presntation page</h1>
   <div class="row">
-    <figure class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-      
+    <figure class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+      <img src="img/person1.jpg" alt="facke image">
+      <figcaption>
+        <h3>mr: xxxxxxxxx</h3>
+        <p>
+          <a href="#">
+            work in IT development web site <br>
+            have 3 years experience <br>
+            xxxxxxx university.
+          </a>
+        </p>
+      </figcaption>
     </figure>
-    <figure class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-
+    <figure class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+      <img  src="img/person2.jpeg" alt="facke image">
+      <figcaption>
+        <h3>md: xxxxxxxxx</h3>
+        <p>
+          <a href="#">
+            work in IT development web site <br>
+            have 3 years experience <br>
+            xxxxxxx university.
+          </a>
+        </p>
+      </figcaption>
     </figure>
-    <figure class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+    <figure class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
 
+
+      <img src="img/person3.jpeg" alt="facke image">
+
+      <figcaption>
+        <h3>mr: xxxxxxxxxx</h3>
+        <p>
+          <a href="#">
+            work in IT development web site <br>
+            have 3 years experience <br>
+            xxxxxxx university.
+          </a>
+        </p>
+      </figcaption>
     </figure>
   </div>
 </section>
-<!-- <=============================== /main =================================> -->
+<!-- <######################################### "presentation" ###############################> -->
+<!-- <#################################### "contact page" #######################> -->
+
+<section id="contact" class="container">
+    <div class="row">
+      <!-- <:::::::::::::::::::::::::::::: form contact ::::::::::::::::::::::::> -->
+      <div class="col-xs-12 col-sm-6 col-md-6">
+
+        <form class="well form-horizontal " action=" " method="post" id="contact_form">
+          <fieldset>
+
+            <!-- *******Form Nom******* -->
+            <legend>Contactez-nous !</legend>
+
+
+            <div class="form-group">
+              <label class="col-md-4 control-label">Nom</label>
+              <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                  <input name="first_name" placeholder="Nom" class="form-control" type="text">
+                </div>
+              </div>
+            </div>
+
+            <!-- ***********Form Prenom********** -->
+
+            <div class="form-group">
+              <label class="col-md-4 control-label">Prenom</label>
+              <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                  <input name="last_name" placeholder="Prenom" class="form-control" type="text">
+                </div>
+              </div>
+            </div>
+
+            <!-- *****************Formualire Email************* -->
+
+            <div class="form-group">
+              <label class="col-md-4 control-label">E-Mail</label>
+              <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                  <input name="email" placeholder="Adresse E-Mail" class="form-control" type="text">
+                </div>
+              </div>
+            </div>
+
+            <!-- *************Form Site****************** -->
+
+            <div class="form-group">
+              <label class="col-md-4 control-label">Site</label>
+              <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
+                  <input name="website" placeholder="Le nom de votre site" class="form-control" type="text">
+                </div>
+              </div>
+            </div>
+
+
+            <!-- *******************Form message**************** -->
+
+            <div class="form-group">
+              <label class="col-md-4 control-label">Message</label>
+              <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                  <textarea class="form-control" name="comment" placeholder="Votre message"></textarea>
+                </div>
+              </div>
+            </div>
+
+            <!-- Success message -->
+            <div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div>
+
+            <!-- Button -->
+            <div class="form-group">
+              <label class="col-md-4 control-label"></label>
+              <div class="col-md-4">
+                <button type="submit" class="btn btn-warning">Envoyer <span class="glyphicon glyphicon-send"></span></button>
+              </div>
+            </div>
+
+          </fieldset>
+        </form>
+      </div>
+      <!-- </div> -->
+      <!-- <::::::::::::::::::::::::: /form contact :::::::::::::::::::::::::::> -->
+
+      <!-- <:::::::::::::::::::::::::: iframe-map ::::::::::::::::::::::::::::::> -->
+
+      <div class="col-xs-12 col-sm-6  ">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.195045360428!2d2.4337783156742456!3d48.854490979287085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66d5f8a4cb333%3A0x573ff85ea4c31510!2sSimplon.co!5e0!3m2!1sfr!2sfr!4v1497949052474" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+    </div>
+<!-- <=============================== /footer =================================> -->
+<footer id="foot" class="container">
+    <ul class="row">
+      <li class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><a href="#">condition</a></li>
+      <li class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><a href="#">about</a></li>
+      <li class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><a href="#">help</a></li>
+    </ul>
+  </footer>
 <script>
 var d = new Date();
 document.getElementById("demo").innerHTML = d.toDateString();
 </script>
 <script>
-function mouseOver() {
-  document.getElementById("dodo").style.border = "red";
-}
+var img = document.getElementsByTagName ("img")
+var demo = document.getElementById ("demo")
+for(var,i=0; i<img.length; i++){
+  img[i].addEventListener ("mouseover",function){
+    var alt=this.alt
+    text.textContent= alt
+  });
+  img[i].addEventListener ("mouseout",function){
 
-function mouseOut() {
-  document.getElementById("dodo").style.color = "black";
+    text.textContent= ""
+  });
+
 }
 </script>
   <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
