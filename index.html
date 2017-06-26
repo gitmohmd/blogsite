@@ -55,7 +55,7 @@
 <!-- <========================================= main ===============================> -->
 <main class="container">
   <div class="row">
-
+    <p id="time"></p>
     <h1 >Home Page</h1>
     <article class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
       <img  src="img/blog1.jpg" alt="gps">
@@ -91,7 +91,7 @@
   <div class="row">
     <p id="demo"></p>
     <figure class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-      <img src="img/person1.jpg" alt="facke image">
+      <img src="img/person1.jpg" alt="facke image1">
       <figcaption>
         <h3>mr: xxxxxxxxx</h3>
         <p>
@@ -104,7 +104,7 @@
       </figcaption>
     </figure>
     <figure class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-      <img  src="img/person2.jpeg" alt="facke image">
+      <img  src="img/person2.jpeg" alt="facke image2">
       <figcaption>
         <h3>md: xxxxxxxxx</h3>
         <p>
@@ -119,7 +119,7 @@
     <figure class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
 
 
-      <img src="img/person3.jpeg" alt="facke image">
+      <img src="img/person3.jpeg" alt="facke image3">
 
       <figcaption>
         <h3>mr: xxxxxxxxxx</h3>
@@ -214,7 +214,7 @@
             <div class="form-group">
               <label class="col-md-4 control-label"></label>
               <div class="col-md-4">
-                <button type="submit" class="btn btn-warning">Envoyer <span class="glyphicon glyphicon-send"></span></button>
+                <button  onclick="myFunction()" type="submit" class="btn btn-warning">Envoyer <span class="glyphicon glyphicon-send"></span></button>
               </div>
             </div>
 
@@ -244,21 +244,33 @@
 
 <script>
 var d = new Date();
-document.getElementById("demo").innerHTML = d.toDateString();
+document.getElementById("time").innerHTML = d.toDateString();
 </script>
 <script>
 var img = document.getElementsByTagName ("img")
 var demo = document.getElementById ("demo")
-for(var,i=0; i<img.length; i++){
-  img[i].addEventListener ("mouseover",function){
+for(var i=0; i<img.length; i++){
+  img[i].addEventListener ("mouseover",function(){
     var alt=this.alt
-    text.textContent= alt
+    demo.textContent= alt
   });
-  img[i].addEventListener ("mouseout",function){
+  img[i].addEventListener ("mouseout",function(){
 
-    text.textContent= ""
+    demo.textContent= ""
   });
 
+}
+</script>
+<script>
+function myFunction() {
+    var txt;
+    var person = prompt("Please enter your name:", "enter you name");
+    if (person == null || person == "") {
+        txt = "User cancelled the prompt.";
+    } else {
+        txt = "Hello " + person + "! How are you today?";
+    }
+    document.getElementById("demo").innerHTML = txt;
 }
 </script>
   <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
